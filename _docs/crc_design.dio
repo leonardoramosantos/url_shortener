@@ -1,0 +1,214 @@
+<mxfile host="65bd71144e">
+    <diagram id="ehgLUBliG_nuT-8eiQp-" name="Page-1">
+        <mxGraphModel dx="2924" dy="2253" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="79" value="Frontend" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="-660" y="-30" width="2310" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="320" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="group" vertex="1" connectable="0" parent="7">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="URLShortenerForm" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="8">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Take the&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;input&amp;nbsp;&lt;/span&gt;URL&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;Request a shortened URL to Backend&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Show the shortened URL&lt;/div&gt;&lt;div&gt;Copy the shortened to Clipboard&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;div&gt;URLShortenerCreatorBackend&lt;/div&gt;Clipboard" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="320" y="366" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="group" vertex="1" connectable="0" parent="12">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="URLShortenerCreatorBackend" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="13">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Ingest the input URL&lt;div&gt;Request a unique Slug to SlugCreator&lt;/div&gt;&lt;div&gt;Return the shortened URL&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="13">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="SlugCreaotr&lt;div&gt;&lt;/div&gt;&lt;div&gt;Database&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="13">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="320" y="-360" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="group" vertex="1" connectable="0" parent="19">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Router" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="20">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;div&gt;Route Requests for AccountForm&lt;/div&gt;Route Requests for URLShortenerForm&lt;div&gt;Route Requests for ShortURLResolver&lt;/div&gt;&lt;div&gt;Rout Requests for URLShortenerAnalytics&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="20">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;div&gt;URLShortenerForm&lt;/div&gt;&lt;div&gt;ShortURLResolver&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="20">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="1190" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="group" vertex="1" connectable="0" parent="25">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="ShortURLResolver" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="26">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Take a Short URL as input&lt;div&gt;Request the original URL to Backend&lt;/div&gt;&lt;div&gt;Show error 404 if it doesn&#39;t exists&lt;/div&gt;&lt;div&gt;Redirect to original URL&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="26">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;div&gt;ShortURLResolverBackend&lt;/div&gt;User Browser&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="26">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="610" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="group" vertex="1" connectable="0" parent="31">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="ShortURLAnalyticsPage" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="32">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;Redirect to AlternativeURLSlugForm&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;Request and show alternative Slugs&lt;/span&gt;&lt;br&gt;&lt;/div&gt;Request and show Total Short URL View count&lt;div&gt;Request and show alternative URLs View count&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="32">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="32">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="-260" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="group" vertex="1" connectable="0" parent="36">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="AccountForm" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="37">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Take the user as input&lt;div&gt;Redirect to AccountHome with the account input&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="37">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;AccountHomePage&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="37">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="38">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="30" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="group" vertex="1" connectable="0" parent="42">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="AccountHomePage" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="43">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Take the user as input&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Request account URLs to backend and show&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Request account analytics and show&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Redirect to URLShortenerForm&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Redirect to ShortURLAnalytics&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="43">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="AccountBackend&lt;div&gt;&lt;/div&gt;&lt;div&gt;URLShortenerForm&lt;/div&gt;&lt;div&gt;ShortURLAnalyticsPage&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="43">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="44">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="30" y="366" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="group" vertex="1" connectable="0" parent="50">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="AccountBackend" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="51">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="51">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="Database" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="51">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="46" target="52">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="900" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="group" vertex="1" connectable="0" parent="59">
+                    <mxGeometry width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="AlternativeURLSlugForm" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="60">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="Take the input&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Short URL and&lt;/span&gt;&amp;nbsp;Slug&lt;div&gt;Request an alternative URL Slug creation to backend&lt;/div&gt;&lt;div&gt;Show error if it is a not valid URL&lt;/div&gt;&lt;div&gt;Show error if Slug already exists&lt;/div&gt;&lt;div&gt;Redirect to ShortURLAnalyticsPage&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="60">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="SlugBackend&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="60">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=none;html=1;" edge="1" parent="1" source="34" target="62">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=none;html=1;" edge="1" parent="1" source="45" target="34">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=none;html=1;" edge="1" parent="1" source="45" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=none;html=1;" edge="1" parent="1" source="39" target="45">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="610" y="366" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="ShortURLAnalyticsBackend" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="70">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="70">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="70">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" style="edgeStyle=none;html=1;" edge="1" parent="1" source="35" target="71">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="900" y="680" width="270" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="SlugBackend" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" vertex="1" parent="75">
+                    <mxGeometry width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="Generate a unique Slug&lt;div&gt;Let unique index deal with validation&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="75">
+                    <mxGeometry y="30" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="Database" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="75">
+                    <mxGeometry y="210" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" style="edgeStyle=none;html=1;" edge="1" parent="1" source="16" target="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" style="edgeStyle=none;html=1;" edge="1" parent="1" source="63" target="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
