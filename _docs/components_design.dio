@@ -1,0 +1,121 @@
+<mxfile host="65bd71144e">
+    <diagram id="Vc6s5VgyUVFbJQh5-MSi" name="Page-1">
+        <mxGraphModel dx="2074" dy="1153" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Backend" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=20;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="790" width="1500" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Frontend" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="490" width="1500" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Others" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=20;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1200" width="1500" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="350" y="820" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Typescript Module&lt;div&gt;ER Models migration&lt;/div&gt;&lt;div&gt;Export models to other components&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="SharedModels" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="10">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="630" y="820" width="240" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="NestJS Application&lt;div&gt;Responsible for CRUD of Accounts, URLs, Slugs&lt;/div&gt;&lt;div&gt;Analytics of URLs requests&lt;/div&gt;&lt;div&gt;Swagger OpenAPI&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="11">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="AdminBackend" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="11">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="910" y="820" width="240" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="NestJS Application&lt;div&gt;Responsible for resolving Slugs into URLs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="14">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="URLBackend" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="14">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Split responsibilities&lt;/h1&gt;&lt;div&gt;Splitting Admin and URL resolving responsibilities between two different applications makes it easier to scale as well as makes it be more cost effective, as we expect way more URLs resolving operations than administrative.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="1040" width="520" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="350" y="520" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Expects an Account" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="21">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="LoginForm" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="21">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="630" y="520" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Shows account information&lt;div&gt;Lists account URLs&lt;/div&gt;&lt;div&gt;Contains URL creation Form&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="24">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="AccountHomePage" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="24">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="910" y="520" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Shows URL information&lt;div&gt;Lists URL Slugs&lt;/div&gt;&lt;div&gt;Contains Slug creation Form&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="27">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="URLPage" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="27">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="1190" y="520" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Resolves a Slug into URL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="30">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="SlugResolutionRoute" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="30">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="340" y="1230" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="33">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="33">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="620" y="1230" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="36">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="MongoDB" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="36">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="900" y="1230" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Simple, fast&lt;div&gt;LRU eviction policy&lt;/div&gt;&lt;div&gt;TTL&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="39">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Memcached" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="39">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="1180" y="1230" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Route requests between all services&lt;div&gt;Rate Limit of requests per IP&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="42">
+                    <mxGeometry y="40" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="NGINX" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=17;" vertex="1" parent="42">
+                    <mxGeometry width="240" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
