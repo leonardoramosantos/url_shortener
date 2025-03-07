@@ -1,0 +1,12 @@
+services:
+  db-provisioner:
+    build:
+      dockerfile: ./Dockerfile.db-provisioner
+      context: .
+
+  admin-backend:
+    build:
+      dockerfile: ./Dockerfile.admin-backend
+      context: .
+    depends_on:
+      - db-provisioner

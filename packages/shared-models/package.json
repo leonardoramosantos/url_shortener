@@ -16,7 +16,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "watch": "chokidar 'src/**/*.ts' -c 'pnpm run build'"
+    "watch": "chokidar 'src/**/*.ts' -c 'pnpm run build'",
+    "clean": "rm -rf dist"
   },
   "keywords": [],
   "author": "",
