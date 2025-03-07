@@ -1,0 +1,18 @@
+{
+  "name": "@leonardo_url_shortener/db-provisioner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "dependencies": {
+    "@leonardo_url_shortener/shared-models": "workspace:^",
+    "@prisma/client": "^6.4.1",
+    "prisma": "^6.4.1"
+  }
+}
