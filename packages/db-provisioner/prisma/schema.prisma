@@ -15,7 +15,7 @@ datasource db {
 
 model Account {
   id          Int      @id @default(autoincrement()) // Use Int instead of String
-  accountName String
+  accountName String   @unique
   createdDate DateTime @default(now())
   Url         Url[]
 }

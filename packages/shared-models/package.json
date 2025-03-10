@@ -17,13 +17,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "watch": "chokidar 'src/**/*.ts' -c 'pnpm run build'",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist node_modules"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.4.1",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
     "typescript": "^5.8.2"

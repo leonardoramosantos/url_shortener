@@ -10,3 +10,5 @@ services:
       context: .
     depends_on:
       - db-provisioner
+    ports:
+      - "3000:3000"
