@@ -12,9 +12,9 @@ FROM node:22 AS runtime
 
 COPY --from=builder /build/node_modules /node_modules
 
-WORKDIR /app/admin-backend
+WORKDIR /app/url-backend
 
-COPY --from=builder /build/apps/admin-backend/node_modules ./node_modules
-COPY --from=builder /build/apps/admin-backend/dist ./dist
+COPY --from=builder /build/apps/url-backend/node_modules ./node_modules
+COPY --from=builder /build/apps/url-backend/dist ./dist
 
 CMD node dist/main.js

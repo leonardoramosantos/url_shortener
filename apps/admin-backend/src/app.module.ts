@@ -9,7 +9,13 @@ import { ShortUrlModule } from './short-url/short-url.module';
 import { ShortUrlAccessModule } from './short-url-access/short-url-access.module';
 
 @Module({
-  imports: [PrismaModule, AccountModule, UrlModule, ShortUrlModule, ShortUrlAccessModule],
+  imports: [
+    PrismaModule,
+    AccountModule,
+    UrlModule,
+    ShortUrlModule,
+    ShortUrlAccessModule,
+  ],
   controllers: [AppController],
   providers: [AppService, UrlService],
 })

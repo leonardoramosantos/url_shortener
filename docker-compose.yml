@@ -1,14 +1,64 @@
+x-env:
+  postgres_params: &postgres_params
+    POSTGRES_HOST: postgres
+    POSTGRES_PORT: 5432
+    DATABASE_URL: "postgresql://admin:admin@postgres:5432/admin?schema=public"
+
+  postgres_credentials: &postgres_credentials
+    POSTGRES_USER: admin
+    POSTGRES_PASSWORD: admin
+    POSTGRES_DB: admin
+
 services:
+  memcached:
+    image: memcached:1.6.37
+    ports:
+      - "11211:11211"
+
+  postgres:
+    image: postgres:17
+    ports:
+      - "5432:5432"
+    environment:
+      <<: *postgres_credentials
+
   db-provisioner:
     build:
       dockerfile: ./Dockerfile.db-provisioner
       context: .
+    environment:
+      <<:
+        - *postgres_credentials
+        - *postgres_params
+    depends_on:
+      - postgres
 
   admin-backend:
     build:
       dockerfile: ./Dockerfile.admin-backend
       context: .
     depends_on:
-      - db-provisioner
+      db-provisioner:
+        condition: service_completed_successfully
+    environment:
+      <<:
+        - *postgres_credentials
+        - *postgres_params
+        - PORT: 3001
     ports:
-      - "3000:3000"
+      - "3001:3001"
+
+  url-backend:
+    build:
+      dockerfile: ./Dockerfile.url-backend
+      context: .
+    depends_on:
+      db-provisioner:
+        condition: service_completed_successfully
+    environment:
+      <<:
+        - *postgres_credentials
+        - *postgres_params
+        - PORT: 3002
+    ports:
+      - "3002:3002"
